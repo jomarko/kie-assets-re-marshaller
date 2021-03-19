@@ -1,0 +1,35 @@
+{
+  "name": "kie-assets-re-marshaller",
+  "displayName": "kie-assets-re-marshaller",
+  "description": "ReMarshaller search for all Kie assets in the project and remarshall them by simple change and consequent save operation ",
+  "version": "0.0.1",
+  "publisher": "jomarko",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/jomarko/kie-assets-re-marshaller",
+  "engines": {
+    "vscode": "^1.34.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "tslint -p ./",
+    "watch": "tsc -watch -p ./",
+    "test:it": "rm -rf ./out && npm run compile && extest install-vsix -f $KIE_VSIX && extest run-tests ./out/it-tests/*.js -- kie-project=$KIE_PROJECT",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^8.2.1",
+    "@types/node": "^14.0.0",
+    "@types/vscode": "^1.34.0",
+    "chai": "^4.2.0",
+    "prettier": "^2.2.1",
+    "mocha": "^6.2.0",
+    "tslint": "^5.16.0",
+    "typescript": "4.0.3",
+    "vscode-extension-tester": "^3.2.4"
+  }
+}
