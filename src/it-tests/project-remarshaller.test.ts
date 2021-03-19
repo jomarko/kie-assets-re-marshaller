@@ -76,7 +76,6 @@ describe("Kie Project ReMarshaller UI Tests", () => {
       // for (const item of srcTestResources) {
       //   await reMarshaller.reMarshall(item);
       // }
-
     } else {
       throw new Error("Explorer not found");
     }

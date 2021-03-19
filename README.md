@@ -8,7 +8,7 @@ There is need to confirm 'eating own our food', in this case Kie assets by VS Co
 
 ## Prerequisite
 
-ReMarshhaller focus on remarshalling projects generated via [kie-asset-library-poc|https://github.com/jstastny-cz/kie-asset-library-poc] tool. However any project that has Kie assets dirrectly under `src/main/resources` or `src/test/resources` ca be re-marshalled.
+ReMarshhaller focus on remarshalling projects generated via [kie-asset-library-poc](https://github.com/jstastny-cz/kie-asset-library-poc) tool. However any project that has Kie assets dirrectly under `src/main/resources` or `src/test/resources` ca be re-marshalled.
 
 ## Running Kie Assets ReMarshaller
 
@@ -25,6 +25,7 @@ There are two mandatory properties to be set
   - Run the downloaded VSCode binary using chromedriver
 
 Currently there is single test which:
+
 - Search for all BPMN, update its `Documentation` and save it
 - Search for all DMN, update its `Description` and save it
 - Search for all PMML: TO DO
