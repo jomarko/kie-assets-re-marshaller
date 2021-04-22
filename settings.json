@@ -1,4 +1,8 @@
 {
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.editor.enablePreview": true
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "window.titleBarStyle":"custom",
+    "workbench.editor.enablePreview":false,
+    "window.restoreFullscreen":true,
+    "window.newWindowDimensions":"maximized",
+    "workbench.startupEditor": "none"
 }
