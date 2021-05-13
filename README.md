@@ -12,15 +12,14 @@ ReMarshhaller focus on remarshalling projects generated via [kie-asset-library-p
 
 ## Running Kie Assets ReMarshaller
 
-There are two mandatory properties to be set
+There is single mandatory property to be set
 
-- `$KIE_VSIX` - path the the VS Code `vsix` extension file
-- `$KIE_PROJECT` - path the the project containing `Kie` assets. Ideallly project generated using
+- `$KIE_PROJECT` - path the the project containing `Kie` assets. Ideally project generated using[kie-asset-library-poc](https://github.com/jstastny-cz/kie-asset-library-poc)
 
 - Once properties mentioned above are set, run `npm run test:it` in terminal. This will:
   - Compile the code
   - Download the latest version of VSCode
-  - Install specified vsix file into the VSCode instance
+  - Install Kogito VSCode extension into the VSCode instance
   - Download the adequate version of chromedriver
   - Run the downloaded VSCode binary using chromedriver
 
@@ -32,4 +31,4 @@ Currently there is single test which:
 - Search for all SCESIM: TO DO
 
 Complete command example:
-`KIE_VSIX=<local-path>/vscode_extension_kogito_kie_editors_0.8.4.vsix KIE_PROJECT=<local-path>/dmn-and-bpmn-generated-quarkus npm run test:it`
+`KIE_PROJECT=<local-path>/dmn-and-bpmn-generated-quarkus npm run test:it`
